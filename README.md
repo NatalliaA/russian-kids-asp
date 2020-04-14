@@ -23,17 +23,12 @@ Project: Web application for children to learn Russian as a foreign language
                                 <li>RussianForKids offers various activities to make it more enjoyable to use the application: watch a video, listen to a song, read a story, translate using the embedded dictionary, take a quiz, or write a comment.</li>
                                 <li>To make RussianForKids more interactive the user can sign up to like, comment, or post information. Only registered users can do these tasks but all users can see the number of likes, and read the comments and posts.</li>
                             </ul>
-<img src="images/russianscreen1.png" width="500px">
-<img src="images/russianscreen2.png" width="500px">
-<img src="images/russianscreen3.png" width="500px">
-<img src="images/russianscreen4.png" width="500px">
-<img src="images/russianscreen5.png" width="500px">
-<img src="images/russianscreen6.png" width="500px">
-<img src="images/russianscreen7.png" width="500px">
-<img src="images/russianscreen8.png" width="500px">
-<img src="images/russianscreen9.png" width="500px">
-<img src="images/russianscreen10.png" width="500px">
-<img src="images/russianscreen11.png" width="500px">
-<img src="images/russianscreen12.png" width="500px">
-<img src="images/russianscreen13.png" width="500px">
-<img src="images/russianscreen14.png" width="500px">
+<img src="images/russianscreen1.png" width="400px">
+<img src="images/russianscreen2.png" width="400px">
+<img src="images/russianscreen3.png" width="400px">
+<img src="images/russianscreen4.png" width="400px">
+<img src="images/russianscreen5.png" width="400px">
+<img src="images/russianscreen11.png" width="400px">
+<img src="images/russianscreen12.png" width="400px">
+<img src="images/russianscreen13.png" width="400px">
+
