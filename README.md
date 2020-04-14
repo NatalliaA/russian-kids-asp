@@ -25,9 +25,9 @@ Project: Web application for children to learn Russian as a foreign language
                             </ul>
 <img src="images/russianscreen1.png" width="300px" align="left">
 <img src="images/russianscreen2.png" width="300px" align="left">
-<ul></ul>
+<p>.............................................................</p>
 
 <img src="images/russianscreen3.png" width="300px" align="left">
 <img src="images/russianscreen4.png" width="300px" align="left">
-<ul></ul>
+<p>.............................................................</p>
 <img src="images/russianscreen5.png" width="300px" align="left">
