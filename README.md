@@ -23,3 +23,4 @@ Project: Web application for children to learn Russian as a foreign language
                                 <li>RussianForKids offers various activities to make it more enjoyable to use the application: watch a video, listen to a song, read a story, translate using the embedded dictionary, take a quiz, or write a comment.</li>
                                 <li>To make RussianForKids more interactive the user can sign up to like, comment, or post information. Only registered users can do these tasks but all users can see the number of likes, and read the comments and posts.</li>
                             </ul>
+<img src="images/russianscreen1" width="400px">
