@@ -24,3 +24,7 @@ Project: Web application for children to learn Russian as a foreign language
                                 <li>To make RussianForKids more interactive the user can sign up to like, comment, or post information. Only registered users can do these tasks but all users can see the number of likes, and read the comments and posts.</li>
                             </ul>
 <img src="images/russianscreen1.png" width="400px">
+<img src="images/russianscreen2.png" width="400px" float="left">
+<img src="images/russianscreen3.png" width="400px" float="left">
+<img src="images/russianscreen4.png" width="400px" float="left">
+<img src="images/russianscreen5.png" width="400px" float="left">
