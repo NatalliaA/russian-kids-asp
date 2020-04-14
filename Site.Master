@@ -1,0 +1,93 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="RussianForKidsVB.SiteMaster" %>
+
+<%@ Import Namespace="RussianForKidsVB" %>
+<%@ Import Namespace="Microsoft.AspNet.Identity" %>
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - RussianForKids</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <style type="text/css">
+        body {
+            background-color: #f5fb60;
+            /*background-image:url(pictures/Vinni.jpg); background-repeat:no-repeat*/
+        }
+
+        .navbar .nav > li > a {
+            color: #67432a;
+            font-size: 14px;
+            font-weight: bold
+        }
+    </style>
+
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="container">
+            <div class="navbar navbar-inverse" style="background-color: #abe815; border-width: medium; border-radius: 10px; border-color: #37cc04">
+                <div class="navbar-header" />
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <a class="navbar-brand" runat="server" href="~/About" style="color: white; font-weight: bold"><span class="glyphicon glyphicon-home" aria-hidden="true" style="font-size: 30px"></span>RussianForKids</a>
+
+            <div class="navbar-collapse collapse navbar-inverse-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a runat="server" href="~/ListOfStories"><span class="glyphicon glyphicon-book" aria-hidden="true" style="font-size: 30px; color: fuchsia"></span>Stories</a></li>
+                    <li><a runat="server" href="~/ListOfSongs"><span class="glyphicon glyphicon-music" aria-hidden="true" style="font-size: 30px; color: orangered"></span>Songs</a></li>
+                    <li><a runat="server" href="~/ListOfCartoons"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true" style="font-size: 30px; color: blueviolet"></span>Cartoons</a></li>
+                    <li><a runat="server" href="~/Tips"><span class="glyphicon glyphicon-star" aria-hidden="true" style="font-size: 30px; color: yellow"></span>Tips</a></li>
+                    <li><a runat="server" href="~/ForumPostList"><span class="glyphicon glyphicon-globe" aria-hidden="true" style="font-size: 30px; color: purple"></span>Forum</a></li>
+                    <li><a runat="server" href="~/Contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true" style="font-size: 30px; color: palevioletred"></span>Contact</a></li>
+                </ul>   
+
+                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <AnonymousTemplate>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a runat="server" href="~/Account/Register"><span class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 30px; color: paleturquoise"></span>Register</a></li>
+                            <li><a runat="server" href="~/Account/Login"><span class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 30px; color: seagreen"></span>Log in</a></li>
+                        </ul>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a runat="server" href="~/EditProfile.aspx" title="Manage your account" style="color: white">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                            <li>
+                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/About.aspx" />
+                            </li>
+                        </ul>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+        </div>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <div class="container">
+                    <div class="footer-message">
+                        <a href="Default.aspx">About</a> | <a href="Contact.aspx">Contact</a> | <a href="Default.aspx">Terms of Use</a>
+                        <p>&copy; <%: DateTime.Now.Year %> - RussianForKids.com</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
