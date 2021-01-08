@@ -1,4 +1,5 @@
-# RussianForKids
+# russian-kids-asp
+## RussianForKids
 Project: Web application for children to learn Russian as a foreign language
 
 <h4>Description</h4>
